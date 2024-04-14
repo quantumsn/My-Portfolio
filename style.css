@@ -405,6 +405,11 @@ footer span {
         font-size: 4vmin;
     }
 
+    .handels h3 {
+        font-size: 5vmin;
+        color: #ffffffdc;
+    }
+    
     #dont-know {
         width: auto;
         height: 80vmin;
