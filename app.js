@@ -44,9 +44,14 @@ function aboutMeScroll() {
 }
 
 let projects = document.querySelectorAll(".proj");
+let body = document.querySelector("body");
 
-for(project of projects) {
-    project.addEventListener("click", function() {
+for (project of projects) {
+    project.addEventListener("click", function () {
+        let bodyWidth = body.offsetWidth;
+        if (bodyWidth < 721) {
+            alert("Please open this project on your PC for better view.");
+        }
         let id = this.getAttribute("id");
         clickBtn(id);
     });
