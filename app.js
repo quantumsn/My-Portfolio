@@ -80,7 +80,7 @@ for (handels of socialMedias) {
 
 function connectSocial(id) {
     if (id == "insta") {
-        window.location.href = "https://www.instagram.com/__public_static_void_main/";
+        window.location.href = "https://www.instagram.com/quantum_sn/";
     } else if (id == "twitter") {
         window.location.href = "https://twitter.com/NayakSampr24896";
     } else if (id == "facebook") {
