@@ -79,9 +79,15 @@ for (handels of socialMedias) {
 }
 
 function connectSocial(id) {
+<<<<<<< HEAD
     if (id == "insta") {
         window.location.href = "https://www.instagram.com/__public_static_void_main/";
     } else if (id == "twitter") {
+=======
+    if(id == "insta") {
+        window.location.href = "https://www.instagram.com/quantum_sn/";
+    } else if(id == "twitter") {
+>>>>>>> 69efa7ab9d4307c23afcaa7aa7e2835355a0561d
         window.location.href = "https://twitter.com/NayakSampr24896";
     } else if (id == "facebook") {
         window.location.href = "not found";
