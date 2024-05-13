@@ -59,7 +59,7 @@ for (project of projects) {
 
 function clickBtn(id) {
     if (id == 1) {
-        window.location.href = "https://quantumsn.github.io/";
+        window.location.href = "https://quantumsn.github.io/amazon-clone/";
     } else if (id == 2) {
         window.location.href = "https://quantumsn.github.io/Tic-Tac-Toe-Game/";
     } else if (id == 3) {
