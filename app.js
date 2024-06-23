@@ -47,15 +47,15 @@ let projects = document.querySelectorAll(".proj");
 let body = document.querySelector("body");
 
 for (project of projects) {
-    project.addEventListener("click", function () {
+    project.addEventListener("click", function (event) {
         let bodyWidth = body.offsetWidth;
         if (bodyWidth < 721) {
-      event.preventDefault();
-      alert("Please open this project on your PC for better view.");
-    } else {
-      let id = this.getAttribute("id");
-      clickBtn(id);
-    }
+          event.preventDefault();
+          alert("Please open this project on your PC for better view.");
+        } else {
+          let id = this.getAttribute("id");
+          clickBtn(id);
+        }
     });
 }
 
