@@ -337,7 +337,9 @@ footer {
 }
 
 footer span {
-    color: #ffffff85;
+  color: #ffffff85;
+  font-size: 2vmin;
+  font-weight: 100;
 }
 
 ::-webkit-scrollbar {
