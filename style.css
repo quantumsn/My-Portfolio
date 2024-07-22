@@ -1,0 +1,444 @@
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #002230;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+h1 {
+  display: inline-block;
+  width: 45vmin;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #ffffff;
+}
+
+.nav {
+  width: 100%;
+  height: 10vmin;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #ffffffce;
+  backdrop-filter: blur(6px);
+}
+
+#main-content {
+  margin-top: 15vmin;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20vmin;
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #800080;
+}
+
+p {
+  line-height: 4vmin;
+  font-size: 2.1vmin;
+}
+
+.main {
+  display: flex;
+  margin-top: 5vmin;
+  height: 50vmin;
+  width: 80%;
+  border-radius: 2vmin;
+  gap: 6vmin;
+  backdrop-filter: blur(5px);
+}
+
+.main-blur {
+  content: "";
+  background: url(cover.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 20vmin;
+  bottom: 0;
+  height: 50vmin;
+  width: 80%;
+  z-index: -1;
+  border-radius: 2vmin;
+  opacity: 0.5;
+}
+
+.home {
+  padding: 8vmin 0 0 12vmin;
+  box-sizing: content-box;
+}
+
+.about-me {
+  font-size: 4vmin;
+}
+
+.education {
+  margin-top: 4vmin;
+}
+
+span {
+  font-size: 3vmin;
+  color: orange;
+}
+
+.my-photo img {
+  height: 60vmin;
+  position: relative;
+  top: -60vmin;
+  z-index: 1;
+}
+
+.my-photo .glow {
+  height: 50vmin;
+  background-color: #003246;
+  filter: blur(100px);
+  border-radius: 50%;
+}
+
+.skills div {
+  padding: 2vmin;
+}
+
+.skills img {
+  height: 5vmin;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1vmin;
+}
+
+.projects {
+  width: 88%;
+  height: 40vmin;
+  display: flex;
+  align-items: center;
+  gap: 5vmin;
+  z-index: 1;
+  position: relative;
+}
+
+.projects::before {
+  content: "Projects";
+  font-size: 4vmin;
+  position: absolute;
+  top: -10vmin;
+  bottom: 0;
+  font-weight: bold;
+}
+
+.proj {
+  width: 44vmin;
+  height: 40vmin;
+  background-color: #001525;
+  border-radius: 3vmin;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.proj:hover {
+  transform: scale(1.1);
+}
+
+.projects img {
+  width: 100%;
+  border-radius: 3vmin 3vmin 0 0;
+}
+
+h4 {
+  margin-top: 3vmin;
+  color: #ffffffe5;
+}
+
+.proj .inner-text {
+  padding: 0 3vmin 3vmin 3vmin;
+}
+
+.inner-text p {
+  color: #ffffff62;
+}
+
+.glow2 {
+  height: 50vmin;
+  width: 50vmin;
+  background-color: #003246;
+  filter: blur(100px);
+  border-radius: 50%;
+  position: fixed;
+  top: 60vmin;
+  left: 20vmin;
+  z-index: -2;
+}
+
+.social {
+  width: 88%;
+  height: 74.3vmin;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4vmin;
+}
+
+.handels {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3vmin 2vmin 4vmin 4vmin;
+  background-color: #001525;
+  width: 20%;
+  box-sizing: border-box;
+  border-radius: 1vmin;
+}
+
+.add-border {
+  border: 1px solid white;
+}
+
+.media {
+  display: flex;
+  align-items: center;
+  color: #ffffffb2;
+  cursor: pointer;
+}
+
+.media:hover {
+  color: #ffffff;
+}
+
+.handels .media i {
+  font-size: 4vmin;
+  margin-right: 2vmin;
+  background: linear-gradient(30deg, #bc0cf1, #d40404);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+h3 {
+  margin: 0;
+  color: #ffffff9d;
+}
+
+#more-projects {
+  display: flex;
+  flex-direction: column;
+  background-color: #001525;
+  padding: 3vmin;
+  width: 20%;
+  border-radius: 1vmin;
+}
+
+#more-projects h3 {
+  margin: 1vmin 1vmin 1vmin 0;
+}
+
+.projects-extra {
+  border-top: 1px solid #ffffff18;
+  cursor: pointer;
+  padding-left: 2vmin;
+  box-sizing: border-box;
+  transition: 0.2s ease-in-out;
+}
+
+.projects-extra:hover {
+  background-color: #003246;
+}
+
+.projects-extra p {
+  color: #ffffff62;
+  font-size: 2vmin;
+}
+
+.projects-extra h4 i {
+  position: relative;
+  left: 2vmin;
+  color: #ffffffa2;
+}
+
+#dont-know {
+  width: 48%;
+  display: flex;
+  justify-content: space-around;
+  padding: 10vmin 0 10vmin 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#dont-know::before {
+  content: "What I know";
+  font-size: 3.5vmin;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  font-weight: bold;
+}
+
+.details-skills {
+  background-color: #001524;
+  height: 100%;
+  padding: 2vmin;
+  box-sizing: border-box;
+  border-radius: 1vmin;
+  width: 25vmin;
+}
+
+.details-skills h3 {
+  color: #9795a1;
+  margin: 2vmin;
+}
+
+.details-skills .sk {
+  font-size: 2vmin;
+  font-weight: 100;
+  padding: 1.4vmin;
+  width: fit-content;
+  margin: 1vmin 0 1vmin 1vmin;
+  color: #ffffff57;
+  border-radius: 2vmin;
+  box-sizing: border-box;
+}
+
+.css {
+  display: inline-block;
+  border: 1px solid grey;
+}
+
+.js {
+  border: 1px solid orange;
+}
+
+.boot {
+  border: 1px solid #698ef1;
+}
+
+.bk {
+  border: 1px solid green;
+}
+
+.react {
+  border: 1px solid #15c6d9;
+}
+
+footer {
+  width: 100%;
+  height: 20vmin;
+  background-color: #0f0f1d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer span {
+  color: #ffffff85;
+  font-size: 2vmin;
+  font-weight: 100;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#642bff, #ff22e6);
+  border-radius: 6px;
+}
+
+@media (max-width: 720px) {
+  h1 {
+    font-size: 6vmin;
+    margin-left: 1vmin;
+    width: auto;
+  }
+
+  .nav a {
+    font-size: 2.5vmin;
+  }
+
+  .main {
+    gap: 2vmin;
+  }
+
+  .home {
+    padding: 3vmin 0 2vmin 3vmin;
+    box-sizing: content-box;
+  }
+
+  p {
+    line-height: 2.4vmin;
+    font-size: 1.9vmin;
+  }
+
+  .about-me {
+    font-size: 3vmin;
+  }
+
+  .projects {
+    flex-wrap: wrap;
+    height: fit-content;
+    width: fit-content;
+    justify-content: center;
+  }
+
+  h4 {
+    margin-bottom: 3vmin;
+    margin-top: 2vmin;
+    font-size: 3vmin;
+  }
+
+  .social {
+    flex-direction: column-reverse;
+    height: fit-content;
+  }
+
+  #more-projects {
+    width: auto;
+    padding: 1vmin 3vmin;
+  }
+
+  h3 {
+    font-size: 4vmin;
+  }
+
+  .handels h3 {
+    font-size: 5vmin;
+    color: #ffffffdc;
+  }
+
+  #dont-know {
+    width: auto;
+    height: 80vmin;
+    margin-top: 4vmin;
+  }
+
+  #dont-know::before {
+    bottom: 136vmin;
+    word-spacing: 1vmin;
+    letter-spacing: 1vmin;
+  }
+
+  .handels {
+    width: auto;
+    height: 60vmin;
+  }
+}
