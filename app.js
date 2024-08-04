@@ -50,14 +50,16 @@ function aboutMeScroll() {
 let projects = document.querySelectorAll(".proj");
 let body = document.querySelector("body");
 
-for (project of projects) {
+for (let project of projects) {
   project.addEventListener("click", function (event) {
+    let id = this.getAttribute("id");
     let bodyWidth = body.offsetWidth;
     if (bodyWidth < 721) {
-      event.preventDefault();
-      alert("Please open this project on your PC for better view.");
+      if(id == 2) {
+        event.preventDefault();
+        alert("Please open this project on your PC for better view.");
+      }
     } else {
-      let id = this.getAttribute("id");
       clickBtn(id);
     }
   });
@@ -67,9 +69,9 @@ function clickBtn(id) {
   if (id == 1) {
     window.location.href = "https://wanderlust-qjjk.onrender.com/listings";
   } else if (id == 2) {
-    window.location.href = "https://quantumsn.github.io/";
+    window.location.href = "https://quantumsn.github.io/amazon-clone/";
   } else if (id == 3) {
-    window.location.href = "https://quantumsn.github.io/simon-says-game/";
+    window.location.href = "https://quantumsn.github.io/Weather-App/";
   } else if (id == 4) {
     window.location.href =
       "https://quantumsn.github.io/Tic-Tac-Toe-Game/";
