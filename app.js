@@ -58,6 +58,8 @@ for (let project of projects) {
       if(id == 2) {
         event.preventDefault();
         alert("Please open this project on your PC for better view.");
+      } else {
+        clickBtn(id);
       }
     } else {
       clickBtn(id);
