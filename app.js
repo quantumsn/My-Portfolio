@@ -76,7 +76,7 @@ function clickBtn(id) {
     window.location.href = "https://quantumsn.github.io/Weather-App/";
   } else if (id == 4) {
     window.location.href =
-      "https://quantumsn.github.io/Tic-Tac-Toe-Game/";
+      "https://quizentum.netlify.app/";
   }
 }
 
